@@ -133,7 +133,11 @@ export abstract class VfsGlobalBaseProvider extends BaseProvider {
     if (!sharedLoginPromise) {
       this.log.info('Login başlatılıyor...');
       sharedLoginPromise = this.loginAndExtractJwt().finally(() => {
+        // Hata olsa bile promise temizle
         sharedLoginPromise = null;
+      }).catch((err) => {
+        this.log.error({ err }, 'Login başarısız oldu');
+        throw err; // Hatayı yeniden fırlat ki bekleyenler hata alsın
       });
     } else {
       this.log.info('Başka bir login devam ediyor — bekleniyor...');

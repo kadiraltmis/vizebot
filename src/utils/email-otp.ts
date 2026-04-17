@@ -68,7 +68,7 @@ async function fetchLatestVfsOtp(cfg: GmailConfig): Promise<string | null> {
       user: cfg.user,
       pass: cfg.appPassword,
     },
-    tls: { rejectUnauthorized: false },
+    tls: true,
     logger: false,
   });
 
