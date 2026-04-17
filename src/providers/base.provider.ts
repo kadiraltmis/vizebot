@@ -50,7 +50,7 @@ export abstract class BaseProvider implements ProviderAdapter {
    * Falls back to launching headless Chromium if CDP is not available.
    * Used for Railway/Docker deployments where no user Chrome exists.
    */
-  protected async ensureSession(headless = true): Promise<BrowserSession> {
+  protected async ensureSession(_headless = true): Promise<BrowserSession> {
     if (this.session) return this.session;
 
     const cdpUrl = 'http://localhost:9222';
@@ -64,8 +64,20 @@ export abstract class BaseProvider implements ProviderAdapter {
       // CDP not available — launch headless Chromium (for Railway/Docker)
       this.log.info('CDP not available — launching headless Chromium');
       browser = await chromium.launch({
-        headless,
-        args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage'],
+        headless: true,
+        args: [
+          '--no-sandbox',
+          '--disable-setuid-sandbox',
+          '--disable-dev-shm-usage',
+          '--disable-gpu',
+          '--disable-software-rasterizer',
+          '--disable-web-security',
+          // Headless mode flags for container environments
+          '--headless=new',
+          '--hide-scrollbars',
+          '--mute-audio',
+          '--disable-extensions',
+        ],
       });
     }
 
