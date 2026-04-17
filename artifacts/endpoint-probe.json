@@ -1,0 +1,116 @@
+[
+  {
+    "method": "GET",
+    "path": "/appointment/centres/che/tur",
+    "status": 404,
+    "body": "\"\""
+  },
+  {
+    "method": "GET",
+    "path": "/appointment/center/che/tur",
+    "status": 404,
+    "body": "\"\""
+  },
+  {
+    "method": "GET",
+    "path": "/appointment/centers/che/tur",
+    "status": 404,
+    "body": "\"\""
+  },
+  {
+    "method": "GET",
+    "path": "/appointment/centre/che/tur",
+    "status": 404,
+    "body": "\"\""
+  },
+  {
+    "method": "GET",
+    "path": "/vac/list/che/tur",
+    "status": 404,
+    "body": "\"Not Found\""
+  },
+  {
+    "method": "GET",
+    "path": "/vac/centres/che/tur",
+    "status": 404,
+    "body": "\"Not Found\""
+  },
+  {
+    "method": "GET",
+    "path": "/centre/list/che/tur",
+    "status": 404,
+    "body": "\"Not Found\""
+  },
+  {
+    "method": "GET",
+    "path": "/centers/che/tur",
+    "status": 404,
+    "body": "\"Not Found\""
+  },
+  {
+    "method": "GET",
+    "path": "/appointment/vac/che/tur",
+    "status": 404,
+    "body": "\"\""
+  },
+  {
+    "method": "GET",
+    "path": "/appointment/slots/che/tur",
+    "status": 0,
+    "body": "TypeError: Failed to fetch"
+  },
+  {
+    "method": "GET",
+    "path": "/appointment/slot/che/tur",
+    "status": 404,
+    "body": "\"\""
+  },
+  {
+    "method": "GET",
+    "path": "/appointment/available/che/tur",
+    "status": 404,
+    "body": "\"\""
+  },
+  {
+    "method": "GET",
+    "path": "/appointment/availability/che/tur",
+    "status": 404,
+    "body": "\"\""
+  },
+  {
+    "method": "GET",
+    "path": "/slot/che/tur",
+    "status": 404,
+    "body": "\"Not Found\""
+  },
+  {
+    "method": "GET",
+    "path": "/slots/che/tur",
+    "status": 404,
+    "body": "\"Not Found\""
+  },
+  {
+    "method": "GET",
+    "path": "/appointmentcenter/list/che/tur",
+    "status": 404,
+    "body": "\"Not Found\""
+  },
+  {
+    "method": "GET",
+    "path": "/appointmentcenter/centres/che/tur",
+    "status": 404,
+    "body": "\"Not Found\""
+  },
+  {
+    "method": "GET",
+    "path": "/appointmentslot/list/che/tur",
+    "status": 404,
+    "body": "\"Not Found\""
+  },
+  {
+    "method": "GET",
+    "path": "/appointment/list/che/tur",
+    "status": 404,
+    "body": "\"\""
+  }
+]

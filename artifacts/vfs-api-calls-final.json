@@ -1,0 +1,14 @@
+[
+  {
+    "status": 429,
+    "method": "POST",
+    "url": "LIFT/user/login",
+    "body": "{\"code\":\"429001\"}"
+  },
+  {
+    "status": 200,
+    "method": "POST",
+    "url": "LIFT/log/create",
+    "body": "\"CHETURe9ee0f2f-9f72-459d-9b8d-3d1be76a44a6\""
+  }
+]

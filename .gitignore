@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Environment — NEVER commit secrets
+.env
+.env.local
+
+# Runtime artifacts
+artifacts/visa-monitor.db
+artifacts/logs/
+artifacts/screenshots/
+artifacts/html/
+
+# Keep the artifacts directory itself (for screenshots etc.)
+!artifacts/.gitkeep
+
+# Config with real credentials (use config.example.json as template)
+config/config.json
+
+# OS
+.DS_Store
+Thumbs.db

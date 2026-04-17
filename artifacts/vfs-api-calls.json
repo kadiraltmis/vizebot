@@ -1,0 +1,74 @@
+[
+  {
+    "status": 200,
+    "method": "GET",
+    "url": "VISA:/tur/tr/che/login",
+    "body": "<!doctypehtml><html lang=\"en\"><link rel=\"preconnect\"href=\"https://fonts.gstatic.com\"crossorigin><meta charset=\"utf-8\"><meta http-equiv=\"X-UA-Compatible\"content=\"IE=edge\"><title></title><base href=\"/\"><meta name=\"description\"content=\"VFS Global\"><meta name=\"keywords\"content=\"Travel, Tourism\"><meta name=\"author\"content=\"VFS Global\"><meta http-equiv=\"Cache-Control\"content=\"no-cache, no-store, must-revalidate\"><meta http-equiv=\"Pragma\"content=\"no-cache\"><meta http-equiv=\"Expires\"content=\"0\"><meta na"
+  },
+  {
+    "status": 200,
+    "method": "POST",
+    "url": "VISA:/cdn-cgi/challenge-platform/h/g/jsd/oneshot/b0a7532ac8ec/0.7046747729005612:1776179869:P1Kv0zGLzBf6V5E4KxzSqcy1U_q9XhRqXPQPwcJGoOM/9ec3d5bf1fcce32b",
+    "body": ""
+  },
+  {
+    "status": 200,
+    "method": "POST",
+    "url": "VISA:/cdn-cgi/challenge-platform/h/g/jsd/oneshot/b0a7532ac8ec/0.7046747729005612:1776179869:P1Kv0zGLzBf6V5E4KxzSqcy1U_q9XhRqXPQPwcJGoOM/9ec3d5bf1fcce32b",
+    "body": ""
+  },
+  {
+    "status": 200,
+    "method": "GET",
+    "url": "LIFT:/master/nationality/tr-TR",
+    "body": "[{\"id\":62,\"masterId\":0,\"nationalityName\":\"Afganistan\",\"cultureCode\":\"tr-TR\",\"isoCode\":\"AFG\",\"error\":null},{\"id\":62,\"masterId\":0,\"nationalityName\":\"AFGHANISTAN\",\"cultureCode\":\"tr-TR\",\"isoCode\":\"AFG\",\"error\":null},{\"id\":63,\"masterId\":0,\"nationalityName\":\"ALBANIA\",\"cultureCode\":\"tr-TR\",\"isoCode\":\"ALB\",\"error\":null},{\"id\":63,\"masterId\":0,\"nationalityName\":\"Arnavutluk\",\"cultureCode\":\"tr-TR\",\"isoCode\":\"ALB\",\"error\":null},{\"id\":24,\"masterId\":0,\"nationalityName\":\"ALGERIA\",\"cultureCode\":\"tr-TR\",\"isoCode\""
+  },
+  {
+    "status": 200,
+    "method": "POST",
+    "url": "LIFT:/user/logout",
+    "body": "{\"code\":\"200\",\"message\":\"Logout Successful.\",\"error\":null}"
+  },
+  {
+    "status": 200,
+    "method": "GET",
+    "url": "VISA:/tur/tr/che/login",
+    "body": "<!doctypehtml><html lang=\"en\"><link rel=\"preconnect\"href=\"https://fonts.gstatic.com\"crossorigin><meta charset=\"utf-8\"><meta http-equiv=\"X-UA-Compatible\"content=\"IE=edge\"><title></title><base href=\"/\"><meta name=\"description\"content=\"VFS Global\"><meta name=\"keywords\"content=\"Travel, Tourism\"><meta name=\"author\"content=\"VFS Global\"><meta http-equiv=\"Cache-Control\"content=\"no-cache, no-store, must-revalidate\"><meta http-equiv=\"Pragma\"content=\"no-cache\"><meta http-equiv=\"Expires\"content=\"0\"><meta na"
+  },
+  {
+    "status": 200,
+    "method": "POST",
+    "url": "VISA:/cdn-cgi/challenge-platform/h/g/jsd/oneshot/b0a7532ac8ec/0.7046747729005612:1776179869:P1Kv0zGLzBf6V5E4KxzSqcy1U_q9XhRqXPQPwcJGoOM/9ec3d5bf1fcce32b",
+    "body": ""
+  },
+  {
+    "status": 200,
+    "method": "POST",
+    "url": "VISA:/cdn-cgi/challenge-platform/h/g/jsd/oneshot/b0a7532ac8ec/0.7046747729005612:1776179869:P1Kv0zGLzBf6V5E4KxzSqcy1U_q9XhRqXPQPwcJGoOM/9ec3d5bf1fcce32b",
+    "body": ""
+  },
+  {
+    "status": 200,
+    "method": "POST",
+    "url": "https://litf-api.vfsglobal.com/data/D14906B6BA614C8C97747C352AA409D1",
+    "body": "{\"data\":\"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuupFgB+lYIOtSxrRoHzc|LmCZKJ6+oSbgqgOPzFMM0TasOeLw0NXEn1XfIzXdx75+tegNKwyIZumoh0yhubKs|t59GV321kN0iquYRHrdh3ygfDDHlS9rROQeBqRga0ncSADtbLMrBPqXJjPCoV76y|t92towriKoH75BhiazY0mghm4LjmAWrV0u/GNpV3tk9bxbtHEXGaFmxCJqjg+7x6|1e5wXLfvpj9w1QsiSWOSJxLOyICz/9ByxXycQQFdNmjnnnwco9Gt/Mi33NYH71j0|5oXIjklFC4lvJqaqSY5lS7Vwb9oCt9zX9J0Yz4z4e/3V+0jgRnWOFGofyks4FKe2|GQIDAQAB\"}"
+  },
+  {
+    "status": 200,
+    "method": "GET",
+    "url": "LIFT:/configuration/fields/che/tur",
+    "body": "{\"enableDateOfDeperature\":false,\"enableCourierAddress\":false,\"isFrancePostalValidation\":false,\"enableEndorsedchild\":true,\"enableBankIntegration\":false,\"enableVAFIntegration\":false,\"enableReferenceNumber\":false,\"walkInOperationHours\":\"\",\"xTravelDaysToBeAllowed\":\"0\",\"xDaysBeforeDateOfDeparture\":\"0\",\"noOfRescheduleEligible\":\"2\",\"rescheduleEnabled\":false,\"allowRescheduleXDaysPriorToAppointment\":\"0\",\"allowRescheduleXDaysAfterAppointment\":\"\",\"allowRescheduleOnDateOfAppointment\":\"\",\"cancellationEnabled"
+  },
+  {
+    "status": 200,
+    "method": "POST",
+    "url": "VISA:/cdn-cgi/challenge-platform/h/g/rc/9ec3ea2c98dd7340",
+    "body": ""
+  },
+  {
+    "status": 200,
+    "method": "POST",
+    "url": "VISA:/cdn-cgi/challenge-platform/h/g/rc/9ec3f153ac2c7340",
+    "body": ""
+  }
+]

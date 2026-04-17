@@ -1,0 +1,42 @@
+[
+  {
+    "method": "POST",
+    "url": "https://lift-api.vfsglobal.com/user/logout",
+    "path": "/user/logout",
+    "postData": "{\"missionCode\":\"che\",\"countryCode\":\"tur\",\"username\":\"kadiraltmis@gmail.com\"}",
+    "resp": {
+      "status": 401,
+      "body": "{\"type\":\"https://tools.ietf.org/html/rfc9110#section-15.5.2\",\"title\":\"Unauthorized\",\"status\":401,\"traceId\":\"00-703fd642f3c1875d9b2a6966b65e2a66-becdad9bd969f29e-00\"}"
+    }
+  },
+  {
+    "method": "GET",
+    "url": "https://lift-api.vfsglobal.com/master/nationality/tr-TR",
+    "path": "/master/nationality/tr-TR",
+    "postData": null,
+    "resp": {
+      "status": 200,
+      "body": "[{\"id\":62,\"masterId\":0,\"nationalityName\":\"Afganistan\",\"cultureCode\":\"tr-TR\",\"isoCode\":\"AFG\",\"error\":null},{\"id\":62,\"masterId\":0,\"nationalityName\":\"AFGHANISTAN\",\"cultureCode\":\"tr-TR\",\"isoCode\":\"AFG\",\"error\":null},{\"id\":63,\"masterId\":0,\"nationalityName\":\"ALBANIA\",\"cultureCode\":\"tr-TR\",\"isoCode\":\"ALB\",\"error\":null},{\"id\":63,\"masterId\":0,\"nationalityName\":\"Arnavutluk\",\"cultureCode\":\"tr-TR\",\"isoCode\":\"ALB\",\"error\":null},{\"id\":24,\"masterId\":0,\"nationalityName\":\"ALGERIA\",\"cultureCode\":\"tr-TR\",\"isoCode\":\"DZA\",\"error\":null},{\"id\":24,\"masterId\":0,\"nationalityName\":\"Cezayir\",\"cultureCode\":\"tr-TR\",\"isoCod"
+    }
+  },
+  {
+    "method": "POST",
+    "url": "https://litf-api.vfsglobal.com/data/D14906B6BA614C8C97747C352AA409D1",
+    "path": "/data/D14906B6BA614C8C97747C352AA409D1",
+    "postData": null,
+    "resp": {
+      "status": 200,
+      "body": "{\"data\":\"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuupFgB+lYIOtSxrRoHzc|LmCZKJ6+oSbgqgOPzFMM0TasOeLw0NXEn1XfIzXdx75+tegNKwyIZumoh0yhubKs|t59GV321kN0iquYRHrdh3ygfDDHlS9rROQeBqRga0ncSADtbLMrBPqXJjPCoV76y|t92towriKoH75BhiazY0mghm4LjmAWrV0u/GNpV3tk9bxbtHEXGaFmxCJqjg+7x6|1e5wXLfvpj9w1QsiSWOSJxLOyICz/9ByxXycQQFdNmjnnnwco9Gt/Mi33NYH71j0|5oXIjklFC4lvJqaqSY5lS7Vwb9oCt9zX9J0Yz4z4e/3V+0jgRnWOFGofyks4FKe2|GQIDAQAB\"}"
+    }
+  },
+  {
+    "method": "GET",
+    "url": "https://lift-api.vfsglobal.com/configuration/fields/che/tur",
+    "path": "/configuration/fields/che/tur",
+    "postData": null,
+    "resp": {
+      "status": 200,
+      "body": "{\"enableDateOfDeperature\":false,\"enableCourierAddress\":false,\"isFrancePostalValidation\":false,\"enableEndorsedchild\":true,\"enableBankIntegration\":false,\"enableVAFIntegration\":false,\"enableReferenceNumber\":false,\"walkInOperationHours\":\"\",\"xTravelDaysToBeAllowed\":\"0\",\"xDaysBeforeDateOfDeparture\":\"0\",\"noOfRescheduleEligible\":\"2\",\"rescheduleEnabled\":false,\"allowRescheduleXDaysPriorToAppointment\":\"0\",\"allowRescheduleXDaysAfterAppointment\":\"\",\"allowRescheduleOnDateOfAppointment\":\"\",\"cancellationEnabled\":true,\"allowCancellationXDaysPriorToAppointment\":\"0\",\"allowCancellationXDaysAfterAppointment\":\"\",\"a"
+    }
+  }
+]

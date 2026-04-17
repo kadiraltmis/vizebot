@@ -1,0 +1,200 @@
+[
+  {
+    "t": "2026-04-14T22:02:59.885Z",
+    "method": "GET",
+    "url": "https://visa.vfsglobal.com/tur/tr/che/book-an-appointment",
+    "path": "/tur/tr/che/book-an-appointment",
+    "postData": null,
+    "headers": {
+      "authorization": "undefined...",
+      "clientsource": "undefined..."
+    }
+  },
+  {
+    "t": "2026-04-14T22:02:59.911Z",
+    "method": "GET",
+    "url": "https://liftassets.vfsglobal.com/_nuxt/0536d7124a937fcf696b.js",
+    "path": "/_nuxt/0536d7124a937fcf696b.js",
+    "postData": null,
+    "headers": {
+      "authorization": "undefined...",
+      "clientsource": "undefined..."
+    }
+  },
+  {
+    "t": "2026-04-14T22:02:59.912Z",
+    "method": "GET",
+    "url": "https://liftassets.vfsglobal.com/_nuxt/c821730781f3db40693b.js",
+    "path": "/_nuxt/c821730781f3db40693b.js",
+    "postData": null,
+    "headers": {
+      "authorization": "undefined...",
+      "clientsource": "undefined..."
+    }
+  },
+  {
+    "t": "2026-04-14T22:02:59.913Z",
+    "method": "GET",
+    "url": "https://liftassets.vfsglobal.com/_nuxt/4a5b1110bcafd213a05e.js",
+    "path": "/_nuxt/4a5b1110bcafd213a05e.js",
+    "postData": null,
+    "headers": {
+      "authorization": "undefined...",
+      "clientsource": "undefined..."
+    }
+  },
+  {
+    "t": "2026-04-14T22:02:59.914Z",
+    "method": "GET",
+    "url": "https://liftassets.vfsglobal.com/_nuxt/8055ec5bcfd528a53ebd.js",
+    "path": "/_nuxt/8055ec5bcfd528a53ebd.js",
+    "postData": null,
+    "headers": {
+      "authorization": "undefined...",
+      "clientsource": "undefined..."
+    }
+  },
+  {
+    "t": "2026-04-14T22:02:59.914Z",
+    "method": "GET",
+    "url": "https://visa.vfsglobal.com/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js",
+    "path": "/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js",
+    "postData": null,
+    "headers": {
+      "authorization": "undefined...",
+      "clientsource": "undefined..."
+    }
+  },
+  {
+    "t": "2026-04-14T22:03:00.135Z",
+    "method": "GET",
+    "url": "https://liftassets.vfsglobal.com/_nuxt/9a706f16f476cd946f5b.js",
+    "path": "/_nuxt/9a706f16f476cd946f5b.js",
+    "postData": null,
+    "headers": {
+      "authorization": "undefined...",
+      "clientsource": "undefined..."
+    }
+  },
+  {
+    "t": "2026-04-14T22:03:00.143Z",
+    "method": "GET",
+    "url": "https://liftassets.vfsglobal.com/_nuxt/fonts/110733a.woff2",
+    "path": "/_nuxt/fonts/110733a.woff2",
+    "postData": null,
+    "headers": {
+      "authorization": "undefined...",
+      "clientsource": "undefined..."
+    }
+  },
+  {
+    "t": "2026-04-14T22:03:00.144Z",
+    "method": "POST",
+    "url": "https://visa.vfsglobal.com/cdn-cgi/rum?",
+    "path": "/cdn-cgi/rum",
+    "postData": "{\"memory\":{\"totalJSHeapSize\":66039518,\"usedJSHeapSize\":61659242,\"jsHeapSizeLimit\":4294967296},\"resources\":[],\"referrer\":\"\",\"eventType\":1,\"firstPaint\":0,\"firstContentfulPaint\":0,\"startTime\":17762041798",
+    "headers": {
+      "authorization": "undefined...",
+      "clientsource": "undefined..."
+    }
+  },
+  {
+    "t": "2026-04-14T22:03:00.945Z",
+    "method": "GET",
+    "url": "https://liftassets.vfsglobal.com/_nuxt/img/0d5a9d9.png",
+    "path": "/_nuxt/img/0d5a9d9.png",
+    "postData": null,
+    "headers": {
+      "authorization": "undefined...",
+      "clientsource": "undefined..."
+    }
+  },
+  {
+    "t": "2026-04-14T22:03:00.945Z",
+    "method": "GET",
+    "url": "https://liftassets.vfsglobal.com/_nuxt/img/97310de.png",
+    "path": "/_nuxt/img/97310de.png",
+    "postData": null,
+    "headers": {
+      "authorization": "undefined...",
+      "clientsource": "undefined..."
+    }
+  },
+  {
+    "t": "2026-04-14T22:03:01.167Z",
+    "method": "GET",
+    "url": "https://liftassets.vfsglobal.com/_nuxt/e743a4aa29233e32497d.js",
+    "path": "/_nuxt/e743a4aa29233e32497d.js",
+    "postData": null,
+    "headers": {
+      "authorization": "undefined...",
+      "clientsource": "undefined..."
+    }
+  },
+  {
+    "t": "2026-04-14T22:03:01.168Z",
+    "method": "GET",
+    "url": "https://liftassets.vfsglobal.com/_nuxt/213efdc0ea8d8c3a10fa.js",
+    "path": "/_nuxt/213efdc0ea8d8c3a10fa.js",
+    "postData": null,
+    "headers": {
+      "authorization": "undefined...",
+      "clientsource": "undefined..."
+    }
+  },
+  {
+    "t": "2026-04-14T22:03:01.169Z",
+    "method": "GET",
+    "url": "https://liftassets.vfsglobal.com/_nuxt/cd345b6635c04b45c950.js",
+    "path": "/_nuxt/cd345b6635c04b45c950.js",
+    "postData": null,
+    "headers": {
+      "authorization": "undefined...",
+      "clientsource": "undefined..."
+    }
+  },
+  {
+    "t": "2026-04-14T22:03:01.169Z",
+    "method": "GET",
+    "url": "https://liftassets.vfsglobal.com/_nuxt/972d7c982a7ee7b8ea0a.js",
+    "path": "/_nuxt/972d7c982a7ee7b8ea0a.js",
+    "postData": null,
+    "headers": {
+      "authorization": "undefined...",
+      "clientsource": "undefined..."
+    }
+  },
+  {
+    "t": "2026-04-14T22:03:01.170Z",
+    "method": "GET",
+    "url": "https://liftassets.vfsglobal.com/_nuxt/89abfdeb008559eb572e.js",
+    "path": "/_nuxt/89abfdeb008559eb572e.js",
+    "postData": null,
+    "headers": {
+      "authorization": "undefined...",
+      "clientsource": "undefined..."
+    }
+  },
+  {
+    "t": "2026-04-14T22:03:01.170Z",
+    "method": "GET",
+    "url": "https://liftassets.vfsglobal.com/_nuxt/2435c894affd658381ea.js",
+    "path": "/_nuxt/2435c894affd658381ea.js",
+    "postData": null,
+    "headers": {
+      "authorization": "undefined...",
+      "clientsource": "undefined..."
+    }
+  },
+  {
+    "t": "2026-04-14T22:03:01.171Z",
+    "method": "GET",
+    "url": "https://liftassets.vfsglobal.com/_nuxt/49e0340fb17572b012de.js",
+    "path": "/_nuxt/49e0340fb17572b012de.js",
+    "postData": null,
+    "headers": {
+      "authorization": "undefined...",
+      "clientsource": "undefined..."
+    }
+  }
+]

@@ -1,0 +1,45 @@
+{
+  "providers": [
+    {
+      "id": "stub",
+      "name": "Stub Test Provider",
+      "enabled": true,
+      "baseUrl": "https://visa.vfsglobal.com/tur/en/nld",
+      "targetCountries": ["Netherlands"],
+      "preferredCities": ["Amsterdam"],
+      "visaCategory": "Schengen Visa",
+      "dateRange": {
+        "earliest": "2025-06-01",
+        "latest": "2026-12-31"
+      },
+      "timeRange": {
+        "earliestHour": 8,
+        "latestHour": 18
+      },
+      "pollingIntervalSeconds": 30,
+      "maxConsecutiveErrors": 5
+    },
+    {
+      "id": "vfs-global-tur-nld",
+      "name": "VFS Global Turkey → Netherlands",
+      "enabled": false,
+      "baseUrl": "https://visa.vfsglobal.com/tur/en/nld",
+      "targetCountries": ["Netherlands"],
+      "preferredCities": [],
+      "visaCategory": "Schengen Visa",
+      "dateRange": {
+        "earliest": "2025-06-01",
+        "latest": "2026-12-31"
+      },
+      "timeRange": {
+        "earliestHour": 8,
+        "latestHour": 18
+      },
+      "pollingIntervalSeconds": 60,
+      "maxConsecutiveErrors": 3
+    }
+  ],
+  "notifications": {
+    "desktop": false
+  }
+}

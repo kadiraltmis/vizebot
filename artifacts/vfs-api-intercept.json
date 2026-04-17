@@ -1,0 +1,45 @@
+[
+  {
+    "ts": "2026-04-14T16:36:54.620Z",
+    "method": "POST",
+    "url": "https://litf-api.vfsglobal.com/data/D14906B6BA614C8C97747C352AA409D1",
+    "path": "/data/D14906B6BA614C8C97747C352AA409D1",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "authorization": "Bearer B14C8275AE58C1856515E10E6A450D97E128B29768EEFDC469D16D8",
+      "referer": "https://visa.vfsglobal.com/",
+      "sec-ch-ua": "\"Google Chrome\";v=\"147\", \"Not.A/Brand\";v=\"8\", \"Chromium\";v=\"147\"",
+      "sec-ch-ua-mobile": "?0",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "route": "tur/tr/che",
+      "content-type": "application/x-www-form-urlencoded;charset=UTF-8"
+    },
+    "postData": null,
+    "response": {
+      "status": 200,
+      "body": "{\"data\":\"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuupFgB+lYIOtSxrRoHzc|LmCZKJ6+oSbgqgOPzFMM0TasOeLw0NXEn1XfIzXdx75+tegNKwyIZumoh0yhubKs|t59GV321kN0iquYRHrdh3ygfDDHlS9rROQeBqRga0ncSADtbLMrBPqXJjPCoV76y|t92towriKoH75BhiazY0mghm4LjmAWrV0u/GNpV3tk9bxbtHEXGaFmxCJqjg+7x6|1e5wXLfvpj9w1QsiSWOSJxLOyICz/9ByxXycQQFdNmjnnnwco9Gt/Mi33NYH71j0|5oXIjklFC4lvJqaqSY5lS7Vwb9oCt9zX9J0Yz4z4e/3V+0jgRnWOFGofyks4FKe2|GQIDAQAB\"}"
+    }
+  },
+  {
+    "ts": "2026-04-14T16:36:56.493Z",
+    "method": "GET",
+    "url": "https://lift-api.vfsglobal.com/configuration/fields/che/tur",
+    "path": "/configuration/fields/che/tur",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://visa.vfsglobal.com/",
+      "sec-ch-ua": "\"Google Chrome\";v=\"147\", \"Not.A/Brand\";v=\"8\", \"Chromium\";v=\"147\"",
+      "sec-ch-ua-mobile": "?0",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "route": "tur/tr/che",
+      "clientsource": "rtK06Zjz6oy7D5Q4shNA2QxWureqGTVzfSdyizuvzmQ731M4tEj88fu6Aum5Xj8qsmgiHLmflQlOYU7FfxHGM0lUpiEWP7vommKyp5xQzhzp37CUL3WbrT0yri8LooPfrJQKfMdtNT/Bug6LRDSlv3ozaJ/dXY0PW4pWMjKR0GZvzT1rB0BdOE24wJkkuNT+AktMZw73o38f2DZlyg6PFGcocLwyeRtZHDQtEox8rXDS+P7oZfF88AuE7aU1uMvRburxcovv/7yA9SKsIh+Nym5v6EoeyZH/j3N9uC4Z6230NxUrtP3rSZoWxKbE1wfEhGSsNRCLNxpw0SDm3VciXQ=="
+    },
+    "postData": null,
+    "response": {
+      "status": 200,
+      "body": "{\"enableDateOfDeperature\":false,\"enableCourierAddress\":false,\"isFrancePostalValidation\":false,\"enableEndorsedchild\":true,\"enableBankIntegration\":false,\"enableVAFIntegration\":false,\"enableReferenceNumber\":false,\"walkInOperationHours\":\"\",\"xTravelDaysToBeAllowed\":\"0\",\"xDaysBeforeDateOfDeparture\":\"0\",\"noOfRescheduleEligible\":\"2\",\"rescheduleEnabled\":false,\"allowRescheduleXDaysPriorToAppointment\":\"0\",\"allowRescheduleXDaysAfterAppointment\":\"\",\"allowRescheduleOnDateOfAppointment\":\"\",\"cancellationEnabled...[truncated]"
+    }
+  }
+]

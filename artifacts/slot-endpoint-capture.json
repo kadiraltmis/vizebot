@@ -1,0 +1,42 @@
+[
+  {
+    "method": "GET",
+    "url": "https://lift-api.vfsglobal.com/configuration/fields/che/tur/ESB",
+    "path": "/configuration/fields/che/tur/ESB",
+    "postData": null,
+    "resp": {
+      "status": 200,
+      "body": "{\"enableDateOfDeperature\":false,\"enableCourierAddress\":false,\"isFrancePostalValidation\":false,\"enableEndorsedchild\":true,\"enableBankIntegration\":false,\"enableVAFIntegration\":false,\"enableReferenceNumber\":false,\"walkInOperationHours\":\"\",\"xTravelDaysToBeAllowed\":\"0\",\"xDaysBeforeDateOfDeparture\":\"0\",\"noOfRescheduleEligible\":\"2\",\"rescheduleEnabled\":false,\"allowRescheduleXDaysPriorToAppointment\":\"3\",\"allowRescheduleXDaysAfterAppointment\":\"\",\"allowRescheduleOnDateOfAppointment\":\"\",\"cancellationEnabled\":true,\"allowCancellationXDaysPriorToAppointment\":\"3\",\"allowCancellationXDaysAfterAppointment\":\"\",\"allowCancellationOnDateOfAppointment\":\"\",\"mainVisaCategoryDisplayEnabled\":false,\"isDocumentUploadEnabled\":false,\"isRefundForVASAllowed\":false,\"allowMaxGroupSize\":0,\"isMapFeeScreenRequired\":false,\"payOnlineEnabled\":true,\"payAtVACEnabled\":false,\"payAtBankEnabled\":false,\"enableEntryType\":false,\"enableVisaType\":false,\"enableApplicationType\":false,\"enableMiddleName\":false,\"enableNationalityFilterForVisaCategory\":false,\"enableServiceType\":false,\"isCSComponentEnabled\":false,\"enablePassportType\":false,\"enableConvenienceFee\":false,\"additionalAllocationCode\":\"\",\"isDOBDisabled\":false,\"isFirstNameDisabled\""
+    }
+  },
+  {
+    "method": "GET",
+    "url": "https://lift-api.vfsglobal.com/master/visacategory/che/tur/ESB/tr-TR",
+    "path": "/master/visacategory/che/tur/ESB/tr-TR",
+    "postData": null,
+    "resp": {
+      "status": 200,
+      "body": "[{\"id\":12341,\"parentId\":0,\"masterId\":0,\"name\":\"Ticari\",\"missionCode\":\"che\",\"centerCode\":\"ESB\",\"code\":\"BUS\",\"culturecode\":\"tr-TR\",\"iswaitlist\":true,\"isTMIEnabled\":false,\"isVLNNumberEnable\":false,\"vlnNumberRegex\":null,\"vlnNumberLabelFormat\":null,\"enableReferenceNumber\":false,\"isApplicantDocumentUploadEnabled\":false,\"isReferenceNumberWithPassportEnabled\":false,\"IsMaltaExtServiceConsentsEnabled\":false,\"isApplicantOTPEnabled\":false,\"isMaltaFamilyReunificationEnabled\":false,\"isEmployerDetailsRequired\":false,\"isMIGRISNumberEnabled\":false,\"description\":null,\"isEEFRegistrationEnabled\":false,\"eefNumberRegex\":null,\"isScheduleOTPEnabled\":false,\"enableCloudFlareCaptchaSchedule\":false,\"isPhotoVerificationRequired\":false,\"isOCREnable\":false,\"isSelfiUploadEnable\":false,\"IsTMIContentEnabled\":false,\"MinAgeRequired\":0,\"isCategoriesrestrictedforMinors\":false,\"isTelerioncallRequired\":false,\"isEnableWaitlistForTA\":false,\"isSpecialUser\":false,\"GRNValidRegExpression\":null,\"isHelloverifyandInvitationNumberEnable\":false,\"helloverifyNumberRegExpression\":null,\"isEVENumberEnable\":false,\"descriptionLink\":null,\"IsAdditionalRefNoEnabled\":false,\"AdditionalRefNoRegex\":null,\"oCRFileExtensions\":null,\"isInHouseFVEnabl"
+    }
+  },
+  {
+    "method": "GET",
+    "url": "https://lift-api.vfsglobal.com/master/subvisacategory/che/tur/ESB/TOU/tr-TR",
+    "path": "/master/subvisacategory/che/tur/ESB/TOU/tr-TR",
+    "postData": null,
+    "resp": {
+      "status": 200,
+      "body": "[{\"id\":12350,\"parentId\":12342,\"masterId\":0,\"name\":\"Tıbbi\",\"missionCode\":\"che\",\"centerCode\":\"ESB\",\"code\":\"MED\",\"culturecode\":\"tr-TR\",\"iswaitlist\":false,\"isTMIEnabled\":false,\"isVLNNumberEnable\":false,\"vlnNumberRegex\":null,\"vlnNumberLabelFormat\":null,\"enableReferenceNumber\":false,\"isApplicantDocumentUploadEnabled\":false,\"isReferenceNumberWithPassportEnabled\":false,\"IsMaltaExtServiceConsentsEnabled\":false,\"isApplicantOTPEnabled\":false,\"isMaltaFamilyReunificationEnabled\":false,\"isEmployerDetailsRequired\":false,\"isMIGRISNumberEnabled\":false,\"description\":\"Tibbi\",\"isEEFRegistrationEnabled\":false,\"eefNumberRegex\":null,\"isScheduleOTPEnabled\":false,\"enableCloudFlareCaptchaSchedule\":false,\"isPhotoVerificationRequired\":false,\"isOCREnable\":false,\"isSelfiUploadEnable\":false,\"IsTMIContentEnabled\":false,\"MinAgeRequired\":0,\"isCategoriesrestrictedforMinors\":false,\"isTelerioncallRequired\":false,\"isEnableWaitlistForTA\":false,\"isSpecialUser\":false,\"GRNValidRegExpression\":null,\"isHelloverifyandInvitationNumberEnable\":false,\"helloverifyNumberRegExpression\":\"^[0-9]{5,6}$\",\"isEVENumberEnable\":false,\"descriptionLink\":null,\"IsAdditionalRefNoEnabled\":false,\"AdditionalRefNoRegex\":null,\"oCRFileExtensions\":\"JPG,"
+    }
+  },
+  {
+    "method": "POST",
+    "url": "https://lift-api.vfsglobal.com/appointment/CheckIsSlotAvailable",
+    "path": "/appointment/CheckIsSlotAvailable",
+    "postData": "{\"countryCode\":\"tur\",\"missionCode\":\"che\",\"vacCode\":\"ESB\",\"visaCategoryCode\":\"TOR\",\"roleName\":\"Individual\",\"loginUser\":\"kadiraltmis@gmail.com\",\"payCode\":\"\"}",
+    "resp": {
+      "status": 200,
+      "body": "{\"earliestDate\":null,\"earliestSlotLists\":[],\"error\":{\"code\":1035,\"description\":\"No slots available\",\"type\":\"Information\"}}"
+    }
+  }
+]

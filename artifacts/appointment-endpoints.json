@@ -1,0 +1,152 @@
+[
+  {
+    "method": "GET",
+    "path": "/appointment/vac/che/tur",
+    "status": 404,
+    "body": "\"\""
+  },
+  {
+    "method": "GET",
+    "path": "/appointment/vacs/che/tur",
+    "status": 404,
+    "body": "\"\""
+  },
+  {
+    "method": "GET",
+    "path": "/appointment/centres/che/tur",
+    "status": 404,
+    "body": "\"\""
+  },
+  {
+    "method": "GET",
+    "path": "/appointment/center/che/tur",
+    "status": 404,
+    "body": "\"\""
+  },
+  {
+    "method": "GET",
+    "path": "/appointment/locations/che/tur",
+    "status": 404,
+    "body": "\"\""
+  },
+  {
+    "method": "GET",
+    "path": "/vac/che/tur",
+    "status": 404,
+    "body": "\"Not Found\""
+  },
+  {
+    "method": "GET",
+    "path": "/vac/list/che/tur",
+    "status": 404,
+    "body": "\"Not Found\""
+  },
+  {
+    "method": "GET",
+    "path": "/vaccentre/list/che/tur",
+    "status": 404,
+    "body": "\"Not Found\""
+  },
+  {
+    "method": "GET",
+    "path": "/appointment/slots/che/tur",
+    "status": 0,
+    "body": "TypeError: Failed to fetch"
+  },
+  {
+    "method": "GET",
+    "path": "/appointment/slot/che/tur",
+    "status": 404,
+    "body": "\"\""
+  },
+  {
+    "method": "GET",
+    "path": "/appointment/available/che/tur",
+    "status": 404,
+    "body": "\"\""
+  },
+  {
+    "method": "GET",
+    "path": "/appointment/availability/che/tur",
+    "status": 404,
+    "body": "\"\""
+  },
+  {
+    "method": "GET",
+    "path": "/appointment/availableslots/che/tur",
+    "status": 404,
+    "body": "\"\""
+  },
+  {
+    "method": "GET",
+    "path": "/appointment/calendar/che/tur",
+    "status": 404,
+    "body": "\"\""
+  },
+  {
+    "method": "GET",
+    "path": "/appointment/earliestslot/che/tur",
+    "status": 404,
+    "body": "\"\""
+  },
+  {
+    "method": "GET",
+    "path": "/appointment/che/tur",
+    "status": 404,
+    "body": "\"\""
+  },
+  {
+    "method": "GET",
+    "path": "/appointment/list/che/tur",
+    "status": 404,
+    "body": "\"\""
+  },
+  {
+    "method": "GET",
+    "path": "/master/centre/che/tur",
+    "status": 404,
+    "body": "\"\""
+  },
+  {
+    "method": "GET",
+    "path": "/master/vac/che/tur",
+    "status": 404,
+    "body": "\"\""
+  },
+  {
+    "method": "GET",
+    "path": "/master/appointmentcenter/che/tur",
+    "status": 404,
+    "body": "\"\""
+  },
+  {
+    "method": "GET",
+    "path": "/configuration/appointmentcenter/che/tur",
+    "status": 404,
+    "body": "\"Not Found\""
+  },
+  {
+    "method": "GET",
+    "path": "/configuration/vac/che/tur",
+    "status": 404,
+    "body": "\"Not Found\""
+  },
+  {
+    "method": "GET",
+    "path": "/appointment?missionCountry=che&nationalityCountry=tur",
+    "status": 404,
+    "body": "\"Not Found\""
+  },
+  {
+    "method": "GET",
+    "path": "/vac?missionCountry=che&nationalityCountry=tur",
+    "status": 404,
+    "body": "\"Not Found\""
+  },
+  {
+    "method": "GET",
+    "path": "/appointment/centre?missionCountry=che&nationalityCountry=tur",
+    "status": 404,
+    "body": "\"\""
+  }
+]

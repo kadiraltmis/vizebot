@@ -1,0 +1,101 @@
+[
+  {
+    "method": "POST",
+    "url": "https://litf-api.vfsglobal.com/data/D14906B6BA614C8C97747C352AA409D1",
+    "path": "/data/D14906B6BA614C8C97747C352AA409D1",
+    "postData": null,
+    "ts": 1776205093566,
+    "resp": {
+      "status": 200,
+      "body": "{\"data\":\"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuupFgB+lYIOtSxrRoHzc|LmCZKJ6+oSbgqgOPzFMM0TasOeLw0NXEn1XfIzXdx75+tegNKwyIZumoh0yhubKs|t59GV321kN0iquYRHrdh3ygfDDHlS9rROQeBqRga0ncSADtbLMrBPqXJjPCoV76y|t92towriKoH75BhiazY0mghm4LjmAWrV0u/GNpV3tk9bxbtHEXGaFmxCJqjg+7x6|1e5wXLfvpj9w1QsiSWOSJxLOyICz/9ByxXycQQFdNmjnnnwco9Gt/Mi33NYH71j0|5oXIjklFC4lvJqaqSY5lS7Vwb9oCt9zX9J0Yz4z4e/3V+0jgRnWOFGofyks4FKe2|GQIDAQAB\"}"
+    }
+  },
+  {
+    "method": "GET",
+    "url": "https://lift-api.vfsglobal.com/configuration/fields/che/tur",
+    "path": "/configuration/fields/che/tur",
+    "postData": null,
+    "ts": 1776205094860,
+    "resp": {
+      "status": 200,
+      "body": "{\"enableDateOfDeperature\":false,\"enableCourierAddress\":false,\"isFrancePostalValidation\":false,\"enableEndorsedchild\":true,\"enableBankIntegration\":false,\"enableVAFIntegration\":false,\"enableReferenceNumber\":false,\"walkInOperationHours\":\"\",\"xTravelDaysToBeAllowed\":\"0\",\"xDaysBeforeDateOfDeparture\":\"0\",\"noOfRescheduleEligible\":\"2\",\"rescheduleEnabled\":false,\"allowRescheduleXDaysPriorToAppointment\":\"0\",\"allowRescheduleXDaysAfterAppointment\":\"\",\"allowRescheduleOnDateOfAppointment\":\"\",\"cancellationEnabled\":true,\"allowCancellationXDaysPriorToAppointment\":\"0\",\"allowCancellationXDaysAfterAppointment\":\"\",\"allowCancellationOnDateOfAppointment\":\"\",\"mainVisaCategoryDisplayEnabled\":false,\"isDocumentUploadEnabled\":false,\"isRefundForVASAllowed\":false,\"allowMaxGroupSize\":0,\"isMapFeeScreenRequired\":false,\"payOn"
+    }
+  },
+  {
+    "method": "POST",
+    "url": "https://lift-api.vfsglobal.com/user/login",
+    "path": "/user/login",
+    "postData": "username=kadiraltmis@gmail.com&password=ZyUtND78V1qnYB/Xo4CVqHwaqWZCDVo8Qr6Xp5oB1ItROY9sfWIe0TqZ7DPnw28Gt3m0CK4z4z7ngg6hMJZ9RatzVEJad73MlWrzTWcne6dDrxQaaShVj5QUTE7xz20uwxs8D74c0UQnMwOgSWSeVdT06tKi2rDUi036NVMiCXU2R%2BI%2BgMtb7FLV8HVAUSMo8nA0T2hUoTJ1YYp5BD/D0UZ8rHkADjVeZeeFW54/NY3kGkWEhztfAQqtkZvvzAtO",
+    "ts": 1776205175801,
+    "resp": {
+      "status": 200,
+      "body": "{\"accessToken\":null,\"isAuthenticated\":false,\"nearestVACCountryCode\":null,\"FailedAttemptCount\":0,\"isAppointmentBooked\":false,\"isLastTransactionPending\":false,\"isAppointmentExpired\":false,\"isLimitedDashboard\":false,\"isROCompleted\":false,\"isSOCompleted\":false,\"roleName\":null,\"isUkraineScheme\":false,\"isUkraineSchemeDocumentUpload\":false,\"loginUser\":null,\"dialCode\":null,\"contactNumber\":\"5394414931\",\"remainingCount\":0,\"accountLockHours\":0,\"enableOTPAuthentication\":true,\"isNewUser\":false,\"taResetPWDToken\":null,\"firstName\":null,\"lastName\":null,\"dateOfBirth\":null,\"isPasswordExpiryMessage\":false,\"PasswordExpirydays\":0,\"passportNumber\":null,\"isSpecialUser\":false,\"maximumlimit\":0,\"isSuspendedTA\":false,\"showPasswordExpiryMsgTA\":false,\"passwordExpiryDaysLeftTA\":0,\"isEmbassyUser\":false,\"IsLoginCapturePas"
+    }
+  },
+  {
+    "method": "POST",
+    "url": "https://lift-api.vfsglobal.com/user/login",
+    "path": "/user/login",
+    "postData": "username=kadiraltmis@gmail.com&password=PjxsvhwvxrB/IBCSzzMt7RHstcDNrYTuhIn/YMm%2BOjph0dgeDWhKhwox3/0iv28STXeTwRKxQ0uVL3qkJ3VE9tWv5Oy%2BydrYwERl6MPN0dWj5hoPnnsJuDpN7kaslE4AI2nTLh5mek04jzk/jT/xQA/JAYSNHHIgrfWaMx/eAzMp29nzeUwLefnvCbf5NtEigV9RoT5JQ8hyJOtwJdpHReCFYrtbNoL44igyGGwuXXALnHBEqOlRMnwla4SxJ4SZ",
+    "ts": 1776205188070,
+    "resp": {
+      "status": 200,
+      "body": "{\"accessToken\":\"EAAAAJwB/QVOrHvexW105PLjJzSv+rb02LxCHsNiKdWALmQ1EmN+j3IfsFITK2J4+oqJqnbTuxsPU5mN/KW5olKIMJB8RfIeA1e9E4dLf+wJFOYWhuo0TqX7DsPIh1jS3BHAfc3N2QStchNRw2sTbgJ7MS1B0B4U5nRQUrE1DltLtgUUkMYfQVx36WQqnYXRhQd2CnyF4QwVIj198X7B8MiPPSEcku5+nMnBGf3LUqyJOwqo6a+B+zMmb5ahunpw+HEAPZfa+kc7yXdxaNGow643c0su8wb+gLA8M5NGyOyCDZD7AbC0zI+FAx4E3CYOwJGYyU9idlVyUo+tdh2Y4ctxUfZALmofLpz5wbrxFeQN27pmqODs3ykN1hqt9OdC+X/1hSfZ3xACurplsBLUSsGlMFBnbRWIVss23usXGEpDorOl3NO3+o7UMt3YA9mtW/NqVYl3NfuK1/XySxPjztFMPWHfSERXz714W1P463tnCIY/OHsI45UM8IIMcopQAPRsqduS85qFVar+iUIh5A0kQyaFMVhxnPPBpGhe9zEX/7GG\",\"isAuthenticated\":true,\"nearestVACCountryCode\":null,\"FailedAttemptCount\":0,\"isAppointmentBooked\":false,\"isLastTransactionPending\":false,\"isAppointmentExpired\":false,\"isLimitedDashboard\":false,\"isROCompleted\":false,\"isSOCom"
+    }
+  },
+  {
+    "method": "GET",
+    "url": "https://lift-api.vfsglobal.com/master/nationality/tr-TR",
+    "path": "/master/nationality/tr-TR",
+    "postData": null,
+    "ts": 1776205190836,
+    "resp": {
+      "status": 200,
+      "body": "[{\"id\":62,\"masterId\":0,\"nationalityName\":\"Afganistan\",\"cultureCode\":\"tr-TR\",\"isoCode\":\"AFG\",\"error\":null},{\"id\":62,\"masterId\":0,\"nationalityName\":\"AFGHANISTAN\",\"cultureCode\":\"tr-TR\",\"isoCode\":\"AFG\",\"error\":null},{\"id\":63,\"masterId\":0,\"nationalityName\":\"ALBANIA\",\"cultureCode\":\"tr-TR\",\"isoCode\":\"ALB\",\"error\":null},{\"id\":63,\"masterId\":0,\"nationalityName\":\"Arnavutluk\",\"cultureCode\":\"tr-TR\",\"isoCode\":\"ALB\",\"error\":null},{\"id\":24,\"masterId\":0,\"nationalityName\":\"ALGERIA\",\"cultureCode\":\"tr-TR\",\"isoCode\":\"DZA\",\"error\":null},{\"id\":24,\"masterId\":0,\"nationalityName\":\"Cezayir\",\"cultureCode\":\"tr-TR\",\"isoCode\":\"DZA\",\"error\":null},{\"id\":17,\"masterId\":0,\"nationalityName\":\"ANGOLA\",\"cultureCode\":\"tr-TR\",\"isoCode\":\"AGO\",\"error\":null},{\"id\":17,\"masterId\":0,\"nationalityName\":\"Angola\",\"cultureCode\":\"tr-TR\",\"isoC"
+    }
+  },
+  {
+    "method": "POST",
+    "url": "https://lift-api.vfsglobal.com/appointment/application",
+    "path": "/appointment/application",
+    "postData": "{\"countryCode\":\"tur\",\"missionCode\":\"che\",\"loginUser\":\"kadiraltmis@gmail.com\",\"languageCode\":\"tr-TR\",\"visaToken\":null}",
+    "ts": 1776205190906,
+    "resp": {
+      "status": 200,
+      "body": "{\"data\":[{\"urn\":\"CHE23136443696\",\"visaCategoryCode\":\"TOM\",\"parentVisaCategoryCode\":\"TOI\",\"loginUser\":\"kadiraltmis@gmail.com\",\"missionCode\":\"che\",\"countryCode\":\"tur\",\"isEdit\":\"False\",\"vacCode\":\"ESB\",\"isPaymentDone\":\"False\",\"transactionID\":null,\"isDocumentAvailable\":false,\"isShippingLabelAvailable\":false,\"visaType\":null,\"applicationType\":null,\"isCompleted\":false,\"isPrepaidCourier\":false,\"isWaitlist\":true,\"waitlistStatus\":\"WAITLISTED\",\"isWaitlistUpdate\":true,\"isPayAtBankSelected\":false,\"isRescheduleDisable\":false,\"isCancellationDisable\":false,\"PayAtBankStatus\":\"Pending\",\"applicants\":[{\"lastName\":\"ALTMIS\",\"applicantGroupId\":70322613,\"gender\":1,\"dialCode\":\"9\",\"cityCode\":0,\"vas\":null,\"fees\":[{\"feeId\":11937027,\"feeTypeId\":1,\"feeName\":\"VFS Service Charge\",\"feeTypeCode\":\"VFSFEE\"}],\"emailId\":\"KADIRA"
+    }
+  },
+  {
+    "method": "GET",
+    "url": "https://lift-api.vfsglobal.com/master/subvisacategory/che/tur/ESB/TOI/tr-TR",
+    "path": "/master/subvisacategory/che/tur/ESB/TOI/tr-TR",
+    "postData": null,
+    "ts": 1776205192338,
+    "resp": {
+      "status": 200,
+      "body": "[{\"id\":12393,\"parentId\":12383,\"masterId\":0,\"name\":\"Turistik\",\"missionCode\":\"che\",\"centerCode\":\"ESB\",\"code\":\"TOM\",\"culturecode\":\"tr-TR\",\"iswaitlist\":true,\"isTMIEnabled\":false,\"isVLNNumberEnable\":false,\"vlnNumberRegex\":null,\"vlnNumberLabelFormat\":null,\"enableReferenceNumber\":false,\"isApplicantDocumentUploadEnabled\":false,\"isReferenceNumberWithPassportEnabled\":false,\"IsMaltaExtServiceConsentsEnabled\":false,\"isApplicantOTPEnabled\":false,\"isMaltaFamilyReunificationEnabled\":false,\"isEmployerDetailsRequired\":false,\"isMIGRISNumberEnabled\":false,\"description\":\"Turistik\",\"isEEFRegistrationEnabled\":false,\"eefNumberRegex\":null,\"isScheduleOTPEnabled\":false,\"enableCloudFlareCaptchaSchedule\":false,\"isPhotoVerificationRequired\":false,\"isOCREnable\":false,\"isSelfiUploadEnable\":false,\"IsTMIContentEnabled\":fa"
+    }
+  },
+  {
+    "method": "GET",
+    "url": "https://lift-api.vfsglobal.com/configuration/fields/che/tur/ESB",
+    "path": "/configuration/fields/che/tur/ESB",
+    "postData": null,
+    "ts": 1776205192338,
+    "resp": {
+      "status": 200,
+      "body": "{\"enableDateOfDeperature\":false,\"enableCourierAddress\":false,\"isFrancePostalValidation\":false,\"enableEndorsedchild\":true,\"enableBankIntegration\":false,\"enableVAFIntegration\":false,\"enableReferenceNumber\":false,\"walkInOperationHours\":\"\",\"xTravelDaysToBeAllowed\":\"0\",\"xDaysBeforeDateOfDeparture\":\"0\",\"noOfRescheduleEligible\":\"2\",\"rescheduleEnabled\":false,\"allowRescheduleXDaysPriorToAppointment\":\"3\",\"allowRescheduleXDaysAfterAppointment\":\"\",\"allowRescheduleOnDateOfAppointment\":\"\",\"cancellationEnabled\":true,\"allowCancellationXDaysPriorToAppointment\":\"3\",\"allowCancellationXDaysAfterAppointment\":\"\",\"allowCancellationOnDateOfAppointment\":\"\",\"mainVisaCategoryDisplayEnabled\":false,\"isDocumentUploadEnabled\":false,\"isRefundForVASAllowed\":false,\"allowMaxGroupSize\":0,\"isMapFeeScreenRequired\":false,\"payOn"
+    }
+  },
+  {
+    "method": "GET",
+    "url": "https://lift-api.vfsglobal.com/master/center/che/tur/tr-TR",
+    "path": "/master/center/che/tur/tr-TR",
+    "postData": null,
+    "ts": 1776205192339,
+    "resp": {
+      "status": 200,
+      "body": "[{\"id\":2452,\"masterId\":0,\"centerName\":\"İsviçre Vize Başvuru Merkezi - Ankara\",\"missionCode\":\"che\",\"missionName\":\"Switzerland\",\"countryCode\":\"tur\",\"countryName\":\"Turkiye\",\"cultureCode\":\"en-US\",\"isoCode\":\"ESB\",\"city\":\"Ankara\",\"contactNumber\":null,\"callCenterNumber\":null,\"address\":\"Mustafa Kemal Mah. Dumlupinar Bulv, \\r\\nMAHALL Is Merkezi, Çarsi Kati 274/4 No:11-12, 06530, \\r\\nÇankaya/Ankara\",\"state\":null,\"country\":\"Turkiye\",\"pincode\":\"90\",\"email\":\"Info.swistur@vfsglobal.com \",\"website\":\"https://visa.vfsglobal.com/tur/en/che\",\"timeZone\":\"Turkey Standard Time\",\"vacType\":\"VAC\",\"operationHours\":\"0\",\"upvFees\":0,\"upvCurrency\":\"TRY\",\"Visacategorycode\":null,\"isSpecialUser\":false,\"error\":null},{\"id\":2451,\"masterId\":0,\"centerName\":\"İsviçre Vize Başvuru Merkezi - Istanbul\",\"missionCode\":\"che\",\"missionN"
+    }
+  }
+]
