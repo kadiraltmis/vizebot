@@ -63,10 +63,8 @@ export abstract class BaseProvider implements ProviderAdapter {
     } catch {
       // CDP not available — launch headless Chromium (for Railway/Docker)
       this.log.info('CDP not available — launching headless Chromium');
-      const chromeBin = process.env.CHROME_BIN || '/usr/bin/chromium';
       browser = await chromium.launch({
         headless,
-        executablePath: chromeBin,
         args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage'],
       });
     }
@@ -78,8 +76,7 @@ export abstract class BaseProvider implements ProviderAdapter {
     const pages = context.pages();
     const page = pages.length > 0 ? pages[0]! : await context.newPage();
 
-    const usingCdp = cdpUrl === cdpUrl; // CDP mode if we connected over CDP
-    this.session = { browser, context, page, usingCdp };
+    this.session = { browser, context, page, usingCdp: false };
     return this.session;
   }
 

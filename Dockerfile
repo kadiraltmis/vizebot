@@ -26,6 +26,9 @@ WORKDIR /app
 COPY package*.json ./
 RUN npm ci --include=dev
 
+# Download Playwright Chromium browser (required even though system chromium is installed)
+RUN npx playwright install chromium --with-deps
+
 COPY . .
 RUN npm run build
 
