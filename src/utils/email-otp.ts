@@ -68,7 +68,8 @@ async function fetchLatestVfsOtp(cfg: GmailConfig): Promise<string | null> {
       user: cfg.user,
       pass: cfg.appPassword,
     },
-    tls: true,
+    // TLS sertifika doğrulaması aktif (MITM koruması) — secure: true zaten TLS sağlıyor
+    // tls: { rejectUnauthorized: false } kaldırıldı
     logger: false,
   });
 
