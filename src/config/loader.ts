@@ -60,6 +60,43 @@ const AppConfigSchema = z.object({
 export function loadConfig(): AppConfig {
   const configPath = path.resolve(process.cwd(), 'config', 'config.json');
 
+  // Railway gibi production ortamlarında config dosyası yerine doğrudan env değişkenlerini kullan
+  const botToken = process.env['TELEGRAM_BOT_TOKEN'];
+  const chatId = process.env['TELEGRAM_CHAT_ID'];
+  const vfsEmail = process.env['VFS_EMAIL'];
+  const vfsPassword = process.env['VFS_PASSWORD'];
+  const gmailUser = process.env['GMAIL_USER'];
+  const gmailAppPassword = process.env['GMAIL_APP_PASSWORD'];
+
+  // Eğer config.json yok ama env var ise, minimal config oluştur
+  if (!fs.existsSync(configPath) && (botToken || vfsEmail)) {
+    const defaultConfig: AppConfig = {
+      providers: [
+        {
+          id: 'vfs-global-tur-che',
+          name: 'VFS Global Turkey → Switzerland',
+          enabled: true,
+          baseUrl: 'https://visa.vfsglobal.com/tur/tr/che',
+          targetCountries: ['CH'],
+          preferredCities: [],
+          visaCategory: 'Family',
+          dateRange: { earliest: '2026-04-17', latest: '2026-12-31' },
+          timeRange: { earliestHour: 8, latestHour: 18 },
+          pollingIntervalSeconds: 60,
+          maxConsecutiveErrors: 3,
+        },
+      ],
+      notifications: {
+        desktop: false,
+        telegram: botToken && chatId
+          ? { botToken, chatId }
+          : undefined,
+      },
+    };
+    return defaultConfig;
+  }
+
+
   if (!fs.existsSync(configPath)) {
     throw new Error(
       `Config file not found at ${configPath}. ` +
