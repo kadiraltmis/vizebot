@@ -63,14 +63,10 @@ export function loadConfig(): AppConfig {
   // Railway gibi production ortamlarında config dosyası yerine doğrudan env değişkenlerini kullan
   const botToken = process.env['TELEGRAM_BOT_TOKEN'];
   const chatId = process.env['TELEGRAM_CHAT_ID'];
-  const vfsEmail = process.env['VFS_EMAIL'];
-  const vfsPassword = process.env['VFS_PASSWORD'];
-  const gmailUser = process.env['GMAIL_USER'];
-  const gmailAppPassword = process.env['GMAIL_APP_PASSWORD'];
 
-  // Eğer config.json yok ama env var ise, minimal config oluştur
-  if (!fs.existsSync(configPath) && (botToken || vfsEmail)) {
-    const defaultConfig: AppConfig = {
+  // Eğer config.json yok ama TELEGRAM_BOT_TOKEN var ise, minimal config oluştur
+  if (!fs.existsSync(configPath) && botToken && chatId) {
+    return {
       providers: [
         {
           id: 'vfs-global-tur-che',
@@ -88,12 +84,9 @@ export function loadConfig(): AppConfig {
       ],
       notifications: {
         desktop: false,
-        telegram: botToken && chatId
-          ? { botToken, chatId }
-          : undefined,
+        telegram: { botToken, chatId },
       },
     };
-    return defaultConfig;
   }
 
 
