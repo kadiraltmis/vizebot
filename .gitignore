@@ -23,3 +23,6 @@ config/config.json
 # OS
 .DS_Store
 Thumbs.db
+.openclaw-token 
+artifacts/sessions 
+.env 
