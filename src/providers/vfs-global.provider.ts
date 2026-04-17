@@ -863,3 +863,22 @@ export class VfsGlobalMltProvider extends VfsGlobalBaseProvider {
     { code: 'ML',      city: 'Istanbul-Altunizade', label: 'Istanbul-Altunizade' },
   ];
 }
+
+// ── Turkey → Italy ─────────────────────────────────────────────────────────────
+// Italy VFS centres — needs discovery via GET /master/center/ita/tur/tr-TR
+// Temporary centres based on VFS Istanbul consulate areas
+
+export class VfsGlobalItaProvider extends VfsGlobalBaseProvider {
+  readonly providerId = 'vfs-global-tur-ita';
+  protected readonly missionCountry = 'ita';
+  protected readonly countryName    = 'Italy';
+  protected readonly countryCode    = 'IT';
+  // TODO: Discover real centres by running browser and intercepting API call
+  // Expected: Istanbul, Ankara, possibly Izmir, Antalya
+  protected readonly centres = [
+    { code: 'ITA-IST', city: 'Istanbul', label: 'Istanbul' },
+    { code: 'ITA-ANK', city: 'Ankara',   label: 'Ankara' },
+    { code: 'ITA-IZM', city: 'Izmir',    label: 'Izmir' },
+    { code: 'ITA-ANT', city: 'Antalya',  label: 'Antalya' },
+  ];
+}

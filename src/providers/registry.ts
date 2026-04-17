@@ -16,6 +16,7 @@ import {
   VfsGlobalLtuProvider, VfsGlobalLuxProvider, VfsGlobalMltProvider,
   VfsGlobalNldProvider, VfsGlobalNorProvider, VfsGlobalPolProvider,
   VfsGlobalSvkProvider, VfsGlobalSvnProvider, VfsGlobalSweProvider,
+  VfsGlobalItaProvider,
 } from './vfs-global.provider.js';
 
 type ProviderConstructor = new (config: ProviderConfig) => ProviderAdapter;
@@ -41,6 +42,7 @@ const PROVIDER_MAP: Record<string, ProviderConstructor> = {
   'vfs-global-tur-svk':  VfsGlobalSvkProvider,
   'vfs-global-tur-svn':  VfsGlobalSvnProvider,
   'vfs-global-tur-swe':  VfsGlobalSweProvider,
+  'vfs-global-tur-ita':  VfsGlobalItaProvider,
 };
 
 export function createProvider(config: ProviderConfig): ProviderAdapter {
