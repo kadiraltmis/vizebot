@@ -46,39 +46,40 @@ export abstract class BaseProvider implements ProviderAdapter {
   }
 
   /**
-   * Connect to the user's real Chrome browser via CDP (port 9222).
-   * Throws if Chrome is not running with --remote-debugging-port=9222.
-   *
-   * Start Chrome with:
-   *   chrome.exe --remote-debugging-port=9222 --user-data-dir=C:\chrome-debug
+   * Connect to Chrome browser via CDP (port 9222).
+   * Falls back to launching headless Chromium if CDP is not available.
+   * Used for Railway/Docker deployments where no user Chrome exists.
    */
-  protected async ensureSession(_headless = true): Promise<BrowserSession> {
+  protected async ensureSession(headless = true): Promise<BrowserSession> {
     if (this.session) return this.session;
 
     const cdpUrl = 'http://localhost:9222';
-
     let browser: Browser;
+
+    // Try to connect to user's Chrome via CDP first
     try {
       browser = await chromium.connectOverCDP(cdpUrl);
-    } catch (err) {
-      throw new Error(
-        `Chrome CDP bağlantısı kurulamadı (${cdpUrl}). ` +
-        `Chrome'u şu komutla başlatın:\n` +
-        `  chrome.exe --remote-debugging-port=9222 --user-data-dir=C:\\chrome-debug\n` +
-        `Orijinal hata: ${String(err)}`
-      );
+      this.log.info('Connected to user Chrome via CDP');
+    } catch {
+      // CDP not available — launch headless Chromium (for Railway/Docker)
+      this.log.info('CDP not available — launching headless Chromium');
+      const chromeBin = process.env.CHROME_BIN || '/usr/bin/chromium';
+      browser = await chromium.launch({
+        headless,
+        executablePath: chromeBin,
+        args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage'],
+      });
     }
 
-    this.log.info('Connected to real Chrome via CDP');
-
-    // Use the existing default context from the real Chrome
+    // Use the existing default context from the browser
     const contexts = browser.contexts();
     const context = contexts[0] ?? await browser.newContext();
 
     const pages = context.pages();
     const page = pages.length > 0 ? pages[0]! : await context.newPage();
 
-    this.session = { browser, context, page, usingCdp: true };
+    const usingCdp = cdpUrl === cdpUrl; // CDP mode if we connected over CDP
+    this.session = { browser, context, page, usingCdp };
     return this.session;
   }
 
@@ -103,7 +104,7 @@ export abstract class BaseProvider implements ProviderAdapter {
 
   async close(): Promise<void> {
     if (this.session) {
-      // CDP modunda kullanıcının Chrome'unu kapatma — sadece referansı serbest bırak
+      // Don't close user's Chrome in CDP mode
       if (!this.session.usingCdp) {
         await this.session.browser.close().catch(() => undefined);
       }
