@@ -114,6 +114,13 @@ export function loadConfig(): AppConfig {
       targetCountries: ['NL'],
       visaCategory: 'Family',
     },
+    'vfs-global-tur-pol': {
+      id: 'vfs-global-tur-pol',
+      name: 'VFS Turkey → Poland',
+      baseUrl: 'https://visa.vfsglobal.com/tur/tr/pol',
+      targetCountries: ['PL'],
+      visaCategory: 'Family',
+    },
   };
 
   // Eğer config.json yok ama TELEGRAM_BOT_TOKEN var ise, minimal config oluştur
