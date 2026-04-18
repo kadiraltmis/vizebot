@@ -353,8 +353,13 @@ export abstract class VfsGlobalBaseProvider extends BaseProvider {
   private async fetchSlotsWithJwt(_jwt: string): Promise<Slot[] | null> {
     this.log.info('Angular UI üzerinden slot kontrolü başlıyor...');
 
-    await this.ensureSession(true);
+    const envJwt = await this.resolveJwt();
+    if (!envJwt) {
+      this.log.warn('JWT bulunamadı — slot kontrolü atlanıyor');
+      return null;
+    }
 
+    await this.ensureSession(true);
     const currentUrl = this.page.url();
     if (!currentUrl.includes('/application-detail') && !currentUrl.includes('/dashboard')) {
       if (!currentUrl.includes('vfsglobal.com')) {
@@ -363,9 +368,9 @@ export abstract class VfsGlobalBaseProvider extends BaseProvider {
       }
     }
 
-    const liveJwt = await this.page.evaluate(() => sessionStorage.getItem('JWT')).catch(() => null);
+    const liveJwt = envJwt;
     if (!liveJwt) {
-      this.log.warn('SessionStorage\'da JWT yok — oturum sona ermiş');
+      this.log.warn('JWT yok — oturum sona ermiş');
       return null;
     }
 
