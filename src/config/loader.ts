@@ -64,24 +64,67 @@ export function loadConfig(): AppConfig {
   const botToken = process.env['TELEGRAM_BOT_TOKEN'];
   const chatId = process.env['TELEGRAM_CHAT_ID'];
 
+  // PROVIDERS env ile hangi provider'ların çalışacağını belirle
+  const envProviders = process.env['PROVIDERS'];
+  const providerIds = envProviders
+    ? envProviders.split(',').map(p => p.trim())
+    : ['vfs-global-tur-che']; // default: sadece İsviçre
+
+  // Provider ID → config mapping
+  const providerConfigs: Record<string, object> = {
+    'vfs-global-tur-che': {
+      id: 'vfs-global-tur-che',
+      name: 'VFS Turkey → Switzerland',
+      baseUrl: 'https://visa.vfsglobal.com/tur/tr/che',
+      targetCountries: ['CH'],
+      visaCategory: 'Family',
+    },
+    'vfs-global-tur-dnk': {
+      id: 'vfs-global-tur-dnk',
+      name: 'VFS Turkey → Denmark',
+      baseUrl: 'https://visa.vfsglobal.com/tur/tr/dnk',
+      targetCountries: ['DK'],
+      visaCategory: 'Family',
+    },
+    'vfs-global-tur-aut': {
+      id: 'vfs-global-tur-aut',
+      name: 'VFS Turkey → Austria',
+      baseUrl: 'https://visa.vfsglobal.com/tur/tr/aut',
+      targetCountries: ['AT'],
+      visaCategory: 'Family',
+    },
+    'vfs-global-tur-mlt': {
+      id: 'vfs-global-tur-mlt',
+      name: 'VFS Turkey → Malta',
+      baseUrl: 'https://visa.vfsglobal.com/tur/tr/mlt',
+      targetCountries: ['MT'],
+      visaCategory: 'Family',
+    },
+    'vfs-global-tur-ita': {
+      id: 'vfs-global-tur-ita',
+      name: 'VFS Turkey → Italy',
+      baseUrl: 'https://visa.vfsglobal.com/tur/tr/ita',
+      targetCountries: ['IT'],
+      visaCategory: 'Family',
+    },
+  };
+
   // Eğer config.json yok ama TELEGRAM_BOT_TOKEN var ise, minimal config oluştur
   if (!fs.existsSync(configPath) && botToken && chatId) {
+    const providers = providerIds
+      .filter(id => providerConfigs[id])
+      .map(id => ({
+        ...providerConfigs[id],
+        enabled: true,
+        preferredCities: [],
+        dateRange: { earliest: '2026-04-17', latest: '2026-12-31' },
+        timeRange: { earliestHour: 8, latestHour: 18 },
+        pollingIntervalSeconds: 60,
+        maxConsecutiveErrors: 3,
+      }));
+
     return {
-      providers: [
-        {
-          id: 'vfs-global-tur-che',
-          name: 'VFS Global Turkey → Switzerland',
-          enabled: true,
-          baseUrl: 'https://visa.vfsglobal.com/tur/tr/che',
-          targetCountries: ['CH'],
-          preferredCities: [],
-          visaCategory: 'Family',
-          dateRange: { earliest: '2026-04-17', latest: '2026-12-31' },
-          timeRange: { earliestHour: 8, latestHour: 18 },
-          pollingIntervalSeconds: 60,
-          maxConsecutiveErrors: 3,
-        },
-      ],
+      providers,
       notifications: {
         desktop: false,
         telegram: { botToken, chatId },
