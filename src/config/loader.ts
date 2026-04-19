@@ -127,6 +127,13 @@ export function loadConfig(): AppConfig {
       targetCountries: ['PL'],
       visaCategory: 'Family',
     },
+    'vfs-global-tur-hrv': {
+      id: 'vfs-global-tur-hrv',
+      name: 'VFS Turkey → Croatia',
+      baseUrl: 'https://visa.vfsglobal.com/tur/tr/hrv',
+      targetCountries: ['HR'],
+      visaCategory: 'Family',
+    },
   };
 
   // Eğer config.json yok ama TELEGRAM_BOT_TOKEN var ise, minimal config oluştur
