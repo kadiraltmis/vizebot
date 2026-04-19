@@ -71,7 +71,13 @@ export function loadConfig(): AppConfig {
     : ['vfs-global-tur-che']; // default: sadece İsviçre
 
   // Provider ID → config mapping
-  const providerConfigs: Record<string, object> = {
+  const providerConfigs: Record<string, {
+    id: string;
+    name: string;
+    baseUrl: string;
+    targetCountries: string[];
+    visaCategory: string;
+  }> = {
     'vfs-global-tur-che': {
       id: 'vfs-global-tur-che',
       name: 'VFS Turkey → Switzerland',
